@@ -19,7 +19,6 @@ public class DataHolder {
     public void init(){
         //Here I am pulling the data from the json file and creating
         //object of class Review with the values
-        System.out.println("Copying user data from json file!");
         ObjectMapper mapper = new ObjectMapper();
         String jsonString = "C:\\Users\\angel\\Desktop\\demo\\src\\main\\java\\Filter\\demo\\data\\json\\reviews.json";
         try {

@@ -41,5 +41,21 @@ public class ReviewServiceImpl implements ReviewService {
         return reviewRepository.filterByMinRating(reviews,minRating);
     }
 
+    @Override
+    public Comparator<Review> sortByRatingWithComparator(boolean byHighest) {
+        return reviewRepository.sortByRatingWithComparator(byHighest);
+    }
+
+    @Override
+    public Comparator<Review> sortByDateWithComparator(boolean byHighest) {
+        return reviewRepository.sortByDateWithComparator(byHighest);
+    }
+
+    @Override
+    public Comparator<Review> sortByPrioritizedTextWithComparator() {
+        return reviewRepository.sortByPrioritizedTextWithComparator();
+    }
+
+
 
 }
